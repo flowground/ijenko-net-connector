@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "properties": {
+        "placeId": {
+            "required": true,
+            "type": "string"
+        },
+        "busId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "duration": {
+                    "description": "Duration of the pairing window.",
+                    "type": "integer"
+                },
+                "enabled": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "enabled"
+            ],
+            "type": "object"
+        }
+    }
+}

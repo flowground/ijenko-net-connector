@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "properties": {
+        "embed_metadata": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

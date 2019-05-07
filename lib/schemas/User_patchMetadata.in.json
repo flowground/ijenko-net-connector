@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "properties": {
+        "userId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "add": {
+                    "additionalProperties": {
+                        "description": "null/boolean/integer/number/string/object/array",
+                        "x-type": "any"
+                    },
+                    "description": "list of pairs key/value to add/replace",
+                    "type": "object"
+                },
+                "remove": {
+                    "description": "list of keys to remove",
+                    "items": {
+                        "maxLength": 21,
+                        "minLength": 1,
+                        "pattern": "^[a-z](?:[a-z0-9_]{0,20}|[a-z0-9_]:[a-z0-9_]{1,18}|[a-z0-9_]{2}:[a-z0-9_]{1,17}|[a-z0-9_]{3}:[a-z0-9_]{1,16}|[a-z0-9_]{4}:[a-z0-9_]{1,15})$",
+                        "type": "string"
+                    },
+                    "type": "array",
+                    "uniqueItems": true
+                }
+            },
+            "type": "object"
+        }
+    }
+}

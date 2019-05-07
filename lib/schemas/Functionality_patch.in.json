@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "functionalityId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "name": {
+                    "description": "Free functionality name",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

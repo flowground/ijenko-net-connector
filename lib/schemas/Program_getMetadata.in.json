@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "programId": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

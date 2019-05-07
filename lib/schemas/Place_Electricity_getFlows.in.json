@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "flows": {
+            "required": true,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "battery_charge",
+                    "battery_discharge",
+                    "battery_grid",
+                    "elec_total_gen",
+                    "elec_total_usage",
+                    "elec_feed_in",
+                    "elec_drawn",
+                    "elec_local",
+                    "elec_from_household",
+                    "elec_to_pv",
+                    "elec_usage"
+                ],
+                "type": "string"
+            }
+        }
+    }
+}

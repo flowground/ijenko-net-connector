@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "functionalityId": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

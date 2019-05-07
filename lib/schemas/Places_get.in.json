@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "placeId": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

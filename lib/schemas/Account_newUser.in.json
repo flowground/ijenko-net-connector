@@ -1,0 +1,46 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "email": {
+                    "format": "email",
+                    "minLength": 6,
+                    "type": "string"
+                },
+                "locale": {
+                    "description": "Locale identifier (language, region). See https://tools.ietf.org/html/rfc5646 and https://www.iana.org/assignments/lang-subtags-templates/lang-subtags-templates.xhtml .\n",
+                    "example": "fr-FR",
+                    "minLength": 2,
+                    "pattern": "^[a-z]{2}[A-Za-z0-9-]*$",
+                    "type": "string"
+                },
+                "metadata": {
+                    "additionalProperties": {
+                        "description": "null/boolean/integer/number/string/object/array",
+                        "x-type": "any"
+                    },
+                    "description": "Keys are limited to the same format as tags (up to 21 characters, [a-z0-9], starting with [a-z]). Values can be any JSON value.",
+                    "type": "object"
+                },
+                "name": {
+                    "minLength": 1,
+                    "type": "string"
+                },
+                "phoneNumber": {
+                    "description": "Phone number of the *User* in international format, for SMS notifications.",
+                    "example": "+33177494646",
+                    "minLength": 6,
+                    "pattern": "^\\+[0-9]{5,}$",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "email",
+                "name",
+                "locale"
+            ],
+            "type": "object"
+        }
+    }
+}

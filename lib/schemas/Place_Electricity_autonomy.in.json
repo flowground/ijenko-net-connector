@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "when": {
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+        },
+        "span": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "H",
+                "D",
+                "Wmo",
+                "Wsu",
+                "M",
+                "Y"
+            ]
+        }
+    }
+}

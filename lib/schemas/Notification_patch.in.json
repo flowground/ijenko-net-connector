@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "notificationId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "data": {
+                    "type": "object"
+                },
+                "name": {
+                    "minLength": 1,
+                    "type": "string"
+                },
+                "routing": {
+                    "format": "uri",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

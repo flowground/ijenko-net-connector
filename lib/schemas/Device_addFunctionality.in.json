@@ -1,0 +1,52 @@
+{
+    "type": "object",
+    "properties": {
+        "deviceId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "class": {
+                    "minLength": 2,
+                    "pattern": "^[A-Z][A-Za-z0-9]+$",
+                    "readOnly": true,
+                    "type": "string"
+                },
+                "endpoint": {
+                    "maximum": 255,
+                    "minimum": 0,
+                    "readOnly": true,
+                    "type": "integer"
+                },
+                "metadata": {
+                    "additionalProperties": {
+                        "description": "null/boolean/integer/number/string/object/array",
+                        "x-type": "any"
+                    },
+                    "description": "Keys are limited to the same format as tags (up to 21 characters, [a-z0-9], starting with [a-z]). Values can be any JSON value.",
+                    "type": "object"
+                },
+                "name": {
+                    "description": "Free functionality name",
+                    "type": "string"
+                },
+                "tags": {
+                    "items": {
+                        "maxLength": 21,
+                        "minLength": 1,
+                        "pattern": "^[a-z](?:[a-z0-9_]{0,20}|[a-z0-9_]:[a-z0-9_]{1,18}|[a-z0-9_]{2}:[a-z0-9_]{1,17}|[a-z0-9_]{3}:[a-z0-9_]{1,16}|[a-z0-9_]{4}:[a-z0-9_]{1,15})$",
+                        "type": "string"
+                    },
+                    "type": "array",
+                    "uniqueItems": true
+                }
+            },
+            "required": [
+                "class",
+                "endpoint"
+            ],
+            "type": "object"
+        }
+    }
+}

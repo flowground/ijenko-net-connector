@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "devices": {
+            "required": false,
+            "type": "string",
+            "pattern": "^(?:\\\\*|(?:[A-Z][A-Z0-9]{3}|[a-z][a-z0-9_:]{0,20}|[A-Za-z0-9-_]{22})(?:\\\\|(?:[A-Z][A-Z0-9]{3}|[a-z][a-z0-9_:]{0,20}|[A-Za-z0-9-_]{22}))*)$"
+        },
+        "embed_metadata": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

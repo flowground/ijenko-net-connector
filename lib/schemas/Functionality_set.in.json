@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "functionalityId": {
+            "required": true,
+            "type": "string"
+        },
+        "attributeName": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "null/boolean/integer/number/string/object/array",
+            "x-type": "any"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "properties": {
+        "placeId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "example": {
+                "code": [],
+                "enabled": false,
+                "name": "NOOP"
+            },
+            "properties": {
+                "code": {
+                    "description": "null/boolean/integer/number/string/object/array",
+                    "x-type": "any"
+                },
+                "enabled": {
+                    "default": true,
+                    "type": "boolean"
+                },
+                "metadata": {
+                    "additionalProperties": {
+                        "description": "null/boolean/integer/number/string/object/array",
+                        "x-type": "any"
+                    },
+                    "description": "Keys are limited to the same format as tags (up to 21 characters, [a-z0-9], starting with [a-z]). Values can be any JSON value.",
+                    "type": "object"
+                },
+                "name": {
+                    "minLength": 1,
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "code"
+            ],
+            "type": "object"
+        }
+    }
+}

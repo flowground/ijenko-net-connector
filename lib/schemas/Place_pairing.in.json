@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "placeId": {
+            "required": true,
+            "type": "string"
+        },
+        "busId": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "programId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "code": {
+                    "description": "null/boolean/integer/number/string/object/array",
+                    "x-type": "any"
+                },
+                "enabled": {
+                    "type": "boolean"
+                },
+                "name": {
+                    "minLength": 1,
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

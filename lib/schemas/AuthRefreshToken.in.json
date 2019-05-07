@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "appId": {
+                    "minLength": 1,
+                    "type": "string"
+                },
+                "refreshToken": {
+                    "minLength": 1,
+                    "type": "string"
+                }
+            },
+            "required": [
+                "refreshToken",
+                "appId"
+            ],
+            "type": "object"
+        }
+    }
+}

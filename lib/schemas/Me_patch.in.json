@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "locale": {
+                    "description": "Locale identifier (language, region). See https://tools.ietf.org/html/rfc5646 and https://www.iana.org/assignments/lang-subtags-templates/lang-subtags-templates.xhtml .\n",
+                    "example": "fr-FR",
+                    "minLength": 2,
+                    "pattern": "^[a-z]{2}[A-Za-z0-9-]*$",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

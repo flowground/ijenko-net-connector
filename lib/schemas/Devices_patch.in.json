@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "deviceId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "name": {
+                    "description": "Name of the *Device* as defined by the user. Can be used for user interfaces.",
+                    "minLength": 2,
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}
